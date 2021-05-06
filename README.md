@@ -1,2 +1,2 @@
 # IOTizar-AQC
-Automação sobre Tasmota para controlar aquecimento central.
+Automação em cima de Tasmota para controlar um aquecimento central.
