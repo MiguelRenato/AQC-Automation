@@ -21,3 +21,6 @@ This automation on top of Tasmota is to control a underfloor heating system with
 After Tasmota is connected to your wifi and configured as "Sonoff TH" let's move on or next step.
 
 #
+- Third step go to the console in the tasmota and copy/paste the following RULES.
+
+
