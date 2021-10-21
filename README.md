@@ -2,7 +2,7 @@
 IOTizar-AQC
 </h2>
 <h3>
-This Tasmota automation is to control a underfloor heating system.
+Tasmota automation to control a underfloor heating system.
 </h3>
  
 - Frist step do a hardware hack get dry contact relay on sonoff th16 .
