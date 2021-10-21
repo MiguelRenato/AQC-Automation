@@ -21,6 +21,15 @@ This automation on top of Tasmota is to control a underfloor heating system with
 After Tasmota is connected to your wifi and configured as "Sonoff TH" let's move on or next step.
 
 #
-- Third step go to the console in the tasmota and copy/paste the following RULES.
+- Third step we go to the tasmota console and create the following RULES.
+<img src="./pictures/consola_tasmota.png">
 
+- Rule 1 create a thermo switch automation with a setpoint of 24°C.
 
+```
+Rule1 ON DS18B20#Temperature<24 DO Power1 0 ENDON ON DS18B20#Temperature>24.5 DO Power1 1 ENDON
+```
+Save Rule1 
+```
+Rule1 5
+```
