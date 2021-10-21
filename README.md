@@ -26,8 +26,8 @@ After Tasmota is connected to your wifi and configured as "Sonoff TH" let's move
 
 - Rules COPY/PASTE
 ```diff
-- ATENTION: the text (aqc_05566D) must be changed in all rules according to your "topic" 
-            check tasmota console.
+- ATENTION: the text (aqc_05566D) must be changed in all rules according to your "topic".
+- Check tasmota console to check your topic name.
 ```
 - Rule 1 create a thermo switch automation with a setpoint of 24°C, this serves to keep the temperature inside the hot water tank from falling below 24°C.
 
