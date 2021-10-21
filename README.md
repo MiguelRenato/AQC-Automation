@@ -87,4 +87,5 @@ switch:
     qos: 0
     retain: true
 ```
-<img src="./pictures/sonoff th16 conversion.jpg" width="600">
+# Diagram
+<img src="./pictures/project diagram.jpg" width="1200">
