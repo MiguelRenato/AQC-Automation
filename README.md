@@ -15,7 +15,7 @@ This automation on top of Tasmota is to control a underfloor heating system with
 - TX <---------> RX
 - RX <---------> TX
  
-- 3- Go to https://github.com/tasmota/tasmotizer and download Tasmotizer run and it will get for you the firmware. Happy hack .
+- 3- Go to https://github.com/tasmota/tasmotizer and download Tasmotizer run it and he will get the firmware for you. Happy hack .
 
 - In case you have doubts don't forget make a Googling, this is a very documented subject on the internet and that's why I won't go into detail.
 After Tasmota is connected to your wifi and configured as "Sonoff TH" let's move on or next step.
