@@ -16,5 +16,5 @@ This automation on top of Tasmota is to control a underfloor heating system with
 - RX <---------> TX
 - 
 - 3- Goto https://github.com/tasmota/tasmotizer and download Tasmotizer and happy hack.
-- 
+<img src="./pictures/tasmotizer.png">
 
