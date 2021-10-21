@@ -35,10 +35,10 @@ Rule1 ON DS18B20#Temperature<24 DO Power1 0 ENDON ON DS18B20#Temperature>24.5 DO
 ```
 Rule1 5
 ```
-- Rule 2 on/off thermo switch automation and send the feedback through mqtt.
-- 1click = turn ON Rule1 and send state to mqtt
-- 2click = turn OFF Rule1 and send state to mqtt
-- 3click = Manual On/Off on sonoff th16 button.
+- Rule 2 turn on/off thermo switch automation and send the feedback through mqtt.
+- 1click = turn ON Rule1 automation and send state to mqtt
+- 2click = turn OFF Rule1 automation and send state to mqtt
+- 3click = turn Rule1 automation on/off manually on sonoff th16 button.
 ```
 Rule2 ON Button1#State=2 DO BACKLOG Rule1 1; Publish stat/aqc_05566D/RULE1 ON ENDON ON Button1#State=11 DO BACKLOG Rule1 0; Power1 0; Publish stat/aqc_05566D/RULE1 OFF ENDON ON Button1#State=3 DO BACKLOG Rule1 0; Power1 toggle ENDON
 ```
