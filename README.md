@@ -14,7 +14,10 @@ This automation on top of Tasmota is to control a underfloor heating system with
 - GND <--------> GND
 - TX <---------> RX
 - RX <---------> TX
-- 
+ 
 - 3- Goto https://github.com/tasmota/tasmotizer and download Tasmotizer and happy hack.
-<img src="./pictures/tasmotizer.png">
 
+- In case you have doubts don't forget make a Googling, this is a very documented subject on the internet and that's why I won't go into detail.
+After Tasmota is connected to your wifi and configured as "Sonoff TH" let's move on or next step.
+
+#
