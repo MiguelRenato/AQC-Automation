@@ -7,8 +7,13 @@ This automation on top of Tasmota is to control a underfloor heating system with
 
 #
 - Second step will be flashing Tasmota on Sonoff TH16.
-- 1 Goto https://tasmota.github.io/docs/devices/Sonoff-TH/
-- 2 Get a FTDI Module
-- <img src="./ftdi_module.jpg" width="300">
-- 3 Goto https://github.com/tasmota/tasmotizer and download Tasmotizer.
+- 1- Goto https://tasmota.github.io/docs/devices/Sonoff-TH/ and read.
+- 2- Get a FTDI Module and make wire connections like this
+- <img src="./ftdi_module.jpg" width="150"> 
+- 3.3v <-------> 3.3v
+- GND <--------> GND
+- TX <---------> RX
+- RX <---------> TX
+- 
+- 3- Goto https://github.com/tasmota/tasmotizer and download Tasmotizer.
 - 
