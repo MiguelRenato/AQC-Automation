@@ -1,16 +1,19 @@
-<h2>
-AQC-Automation is a tasmota automation to control a underfloor heating system.
-</h2>
+<h1>
+AQC-Automation
+</h1>
+
+Tasmota automation to control a underfloor heating system.
+
 <h3>
 - Step one, do a hardware hack to get dry contact relay on sonoff th16 .
 </h3>
 <img src="./pictures/sonoff th16 conversion.jpg" width="600">
 
-#
 <h3>
 - Step two, Sonoff TH16 flashing with Tasmota.
 </h3>
- - 1- Go to https://tasmota.github.io/docs/devices/Sonoff-TH/ and read.
+
+- 1- Go to https://tasmota.github.io/docs/devices/Sonoff-TH/ and read.
 - 2- Get a FTDI Module and make wire connections like this
 - <img src="./pictures/ftdi_module.jpg" width="150"> 
 - 3.3v <-------> 3.3v
@@ -23,7 +26,6 @@ AQC-Automation is a tasmota automation to control a underfloor heating system.
 - In case you have doubts don't forget to Googling, this is a very documented subject on the internet and that's why I won't go into detail.
 After Tasmota is connected to your wifi and configured as "Sonoff TH" let's move on to the next step.
 
-#
 <h3>
 - Step three, go to the tasmota console and create the following RULES.
 </h3>
