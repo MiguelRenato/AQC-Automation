@@ -1,5 +1,5 @@
 <h2>
-IOTizar-AQC
+AQC-Control
 </h2>
 <h3>
 Tasmota automation to control a underfloor heating system.
@@ -22,7 +22,7 @@ Tasmota automation to control a underfloor heating system.
 - 3- Go to https://github.com/tasmota/tasmotizer and download Tasmotizer run it and he will get the firmware for you. Happy hack .
 
 - In case you have doubts don't forget make a Googling, this is a very documented subject on the internet and that's why I won't go into detail.
-After Tasmota is connected to your wifi and configured as "Sonoff TH" let's move on or next step.
+After Tasmota is connected to your wifi and configured as "Sonoff TH" let's move on to the next step.
 
 #
 - Third step go to the tasmota console and create the following RULES.
@@ -30,7 +30,7 @@ After Tasmota is connected to your wifi and configured as "Sonoff TH" let's move
 
 ```diff
 - ATENTION: the text (aqc_05566D) must be changed in all rules according to your "topic".
-- Check tasmota console to check your topic name.
+- Check tasmota console to see your topic name.
 ```
 - Rule 1 create a thermo switch automation with a 24°C setpoint, this serves to keep the temperature inside water tank from falling below 24°C.
 
@@ -87,5 +87,5 @@ switch:
     qos: 0
     retain: true
 ```
-# Diagram
+# My diagram
 <img src="./pictures/project diagram.jpg" width="1200">
