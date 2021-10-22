@@ -70,7 +70,7 @@ Ok. Now it's time to do Home Assistant integration go to configuration.yaml.
 </h3>
 
 ```diff
-- ATENTION: the text (aqc_05566D) must be changed in all rules according to your "topic".
+- ATENTION: the text (aqc_05566D) must be changed on configuration.yaml according to your "topic".
 - Check tasmota console to check your topic name.
 ```
 ```
