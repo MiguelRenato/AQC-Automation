@@ -92,8 +92,6 @@ switch:
 # My diagram
 <img src="./pictures/project diagram.jpg" width="1200">
 
-#
-
 <h2>
 Help & Acknowledgements
 </h2>
