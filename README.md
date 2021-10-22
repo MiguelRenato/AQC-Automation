@@ -1,17 +1,16 @@
 <h2>
-AQC-Automation
+AQC-Automation is a tasmota automation to control a underfloor heating system.
 </h2>
 <h3>
-Tasmota automation to control a underfloor heating system.
+- Step one, do a hardware hack to get dry contact relay on sonoff th16 .
 </h3>
- 
-- Frist step do a hardware hack get dry contact relay on sonoff th16 .
-
 <img src="./pictures/sonoff th16 conversion.jpg" width="600">
 
 #
-- Second step flashing Sonoff TH16 with Tasmota.
-- 1- Go to https://tasmota.github.io/docs/devices/Sonoff-TH/ and read.
+<h3>
+- Step two, Sonoff TH16 flashing with Tasmota.
+</h3>
+ - 1- Go to https://tasmota.github.io/docs/devices/Sonoff-TH/ and read.
 - 2- Get a FTDI Module and make wire connections like this
 - <img src="./pictures/ftdi_module.jpg" width="150"> 
 - 3.3v <-------> 3.3v
@@ -19,14 +18,16 @@ Tasmota automation to control a underfloor heating system.
 - TX <---------> RX
 - RX <---------> TX
  
-- 3- Go to https://github.com/tasmota/tasmotizer and download Tasmotizer run it and he will get the firmware for you. Happy hack .
+- 3- Go to https://github.com/tasmota/tasmotizer and download Tasmotizer run it and he will get the firmware for you and happy hack.
 
-- In case you have doubts don't forget make a Googling, this is a very documented subject on the internet and that's why I won't go into detail.
+- In case you have doubts don't forget to Googling, this is a very documented subject on the internet and that's why I won't go into detail.
 After Tasmota is connected to your wifi and configured as "Sonoff TH" let's move on to the next step.
 
 #
-- Third step go to the tasmota console and create the following RULES.
-<img src="./pictures/consola_tasmota.png">
+<h3>
+- Step three, go to the tasmota console and create the following RULES.
+</h3>
+ <img src="./pictures/consola_tasmota.png">
 
 ```diff
 - ATENTION: the text (aqc_05566D) must be changed in all rules according to your "topic".
@@ -45,7 +46,7 @@ Rule1 5
 - Actions:
 - 1click on sonoff button = turn ON Rule1 automation and send state to mqtt
 - 2click on sonoff button = turn OFF Rule1 automation and send state to mqtt
-- Long Press on sonoff button = toggle Rule1 automation "on/off manually on sonoff th16 button".
+- Long Press on sonoff button = toggle Rule1 automation "manually on sonoff th16 button".
 ```
 Rule2 ON Button1#State=2 DO BACKLOG Rule1 1; Publish stat/aqc_05566D/RULE1 ON ENDON ON Button1#State=11 DO BACKLOG Rule1 0; Power1 0; Publish stat/aqc_05566D/RULE1 OFF ENDON ON Button1#State=3 DO BACKLOG Rule1 0; Power1 toggle ENDON
 ```
@@ -53,7 +54,7 @@ Rule2 ON Button1#State=2 DO BACKLOG Rule1 1; Publish stat/aqc_05566D/RULE1 ON EN
 ```
 Rule2 1
 ```
-- Rule 3 mqtt feedback for HA & NodeRED Integration
+- Rule 3 mqtt feedback for Home Assistant Integration
 ```
 Rule3 ON EVENT#aqcON DO BACKLOG Rule1 1; Publish stat/aqc_05566D/RULE1 ON ENDON ON EVENT#aqcOFF DO BACKLOG Rule1 0; Power1 0; Publish stat/aqc_05566D/RULE1 OFF ENDON
 ```
@@ -62,8 +63,9 @@ Rule3 ON EVENT#aqcON DO BACKLOG Rule1 1; Publish stat/aqc_05566D/RULE1 ON ENDON 
 Rule3 1
 ```
 #
-
-# Ok now it's time to do the integration in Home Assistant go to configuration.yaml
+<h3>
+Ok. Now it's time to do Home Assistant integration go to configuration.yaml.
+</h3>
 
 ```diff
 - ATENTION: the text (aqc_05566D) must be changed in all rules according to your "topic".
@@ -89,3 +91,12 @@ switch:
 ```
 # My diagram
 <img src="./pictures/project diagram.jpg" width="1200">
+#
+
+<h2>
+Help & Acknowledgements
+</h2>
+
+If you need help or have any questions you can find me here https://forum.cpha.pt/t/iotizar-termoacumolador-do-aqc/7731/7
+
+Special thanks to the Home Assistant Portugal guys @MadDoctor and @Luis Andrade.
