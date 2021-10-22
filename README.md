@@ -2,7 +2,7 @@
 AQC-Automation
 </h1>
 
-Tasmota automation to control a underfloor heating system.
+Tasmota automation to control an underfloor heating system.
 
 <h3>
 - Step one, do a hardware hack to get dry contact relay on sonoff th16 .
