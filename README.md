@@ -1,5 +1,5 @@
 <h2>
-AQC-Control
+AQC-Automation
 </h2>
 <h3>
 Tasmota automation to control a underfloor heating system.
